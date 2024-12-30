@@ -61,11 +61,13 @@ Due to the fact that all variables in the dataset are binary, Multiple Correspon
 - The result of MCA can then be used as input data for the k-means algorithm or other clustering methods.
 
 Files in the repository:
+
 Data:
 -  training_sample.csv - The original dataset that was split into training and test data (for the predictive model).
 -  buyers_with_clusters.csv and non_buyers_with_clusters.csv - These files contain cluster numbers and the values of the individual MCA components.
 -  data_with_prob.csv - This file contains an additional variable with the probability values of making a purchase for each website user.
 
+Notebooks:
 - EDA and data preprocessing.ipynb - This notebook contains the results of the exploratory data analysis and data preparation for modeling.
 - Web users segmentation.ipynb - This notebook contains an attempt to segment customers and non-customers using the k-means method, preceded by Multiple Correspondence Analysis (MCA) to reduce dimensionality and facilitate interpretation of the segmentation.
 - Propensity to purchase prediction.ipynb - This notebook contains the code for creating the predictive model (estimating the probability of making a purchase).
